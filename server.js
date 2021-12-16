@@ -1,5 +1,6 @@
 //dependencies required
-const mysql = require("mysql");
+// const mysql = require("mysql");
+const mysql = require('mysql2');
 const inquirer = require("inquirer");
 require("console.table");
 //const sql = require("./sql");
@@ -23,7 +24,7 @@ connection.connect(function (err) {
     if (err) throw err;
     console.log("connected as id " + connection.threadId);
     console.log(`
-    ▀▄▀▄▀▄   𝓔𝓶𝓹𝓵𝓸𝔂𝓮𝓮 𝓜𝓪𝓷𝓪𝓰𝓮𝓻   ▄▀▄▀▄▀
+    ▀▄▀▄▀▄    Employee Manager   ▄▀▄▀▄▀
     `)
     // runs the app
     firstPrompt();
